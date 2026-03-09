@@ -84,10 +84,10 @@ export function GallerySection() {
   }, [])
 
   return (
-    <section id="gallery" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="gallery" className="bg-muted/30">
+      <div className="container mx-auto px-4 py-12">
         {/* Section Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-6">
           <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-4">
             Our Memories
           </span>
@@ -100,7 +100,7 @@ export function GallerySection() {
         </div>
 
         {/* Toggle Button */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center">
           <Button
             onClick={() => setIsExpanded(!isExpanded)}
             variant="outline"
@@ -123,10 +123,11 @@ export function GallerySection() {
 
         {/* Collapsible Gallery Grid */}
         <div
-          className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            isExpanded ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"
+          className={`grid transition-all duration-500 ease-in-out ${
+            isExpanded ? "grid-rows-[1fr] opacity-100 mt-8" : "grid-rows-[0fr] opacity-0 mt-0"
           }`}
         >
+          <div className="overflow-hidden">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
             {galleryImages.map((image, index) => (
               <div
@@ -145,6 +146,7 @@ export function GallerySection() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
               </div>
             ))}
+          </div>
           </div>
         </div>
 
