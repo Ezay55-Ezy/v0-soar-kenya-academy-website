@@ -7,6 +7,7 @@ const quickLinks = [
   { href: "#history", label: "Our History" },
   { href: "#academics", label: "Academics" },
   { href: "#projects", label: "Community Projects" },
+  { href: "#gallery", label: "Gallery" },
   { href: "#support", label: "Support Us" },
   { href: "#contact", label: "Contact" },
 ]

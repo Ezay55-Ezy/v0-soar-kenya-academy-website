@@ -11,7 +11,8 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#history", label: "Our History" },
   { href: "#academics", label: "Academics" },
-  { href: "#projects", label: "Community Projects" },
+  { href: "#projects", label: "Projects" },
+  { href: "#gallery", label: "Gallery" },
   { href: "#support", label: "Support Us" },
   { href: "#contact", label: "Contact" },
 ]
@@ -43,7 +44,7 @@ export function Header() {
           <Link href="#home" className="flex items-center gap-3 shrink-0">
             <div className="relative w-10 h-10 shrink-0 rounded-full overflow-hidden border-2 border-yellow-400/60 shadow-sm">
               <Image
-                src="/images/logo.jpg"
+                src="/images/img-000.jpg"
                 alt="SOAR Kenya Academy Logo"
                 fill
                 className="object-cover"

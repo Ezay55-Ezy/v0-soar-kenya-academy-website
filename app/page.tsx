@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { HistorySection } from "@/components/history-section"
 import { AcademicsSection } from "@/components/academics-section"
 import { ProjectsSection } from "@/components/projects-section"
+import { GallerySection } from "@/components/gallery-section"
 import { SupportSection } from "@/components/support-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
@@ -17,6 +18,7 @@ export default function HomePage() {
       <HistorySection />
       <AcademicsSection />
       <ProjectsSection />
+      <GallerySection />
       <SupportSection />
       <ContactSection />
       <Footer />

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -91,16 +92,26 @@ export function SupportSection() {
         </div>
 
         {/* Emotional Appeal Card */}
-        <Card className={`mb-12 bg-primary/5 border-primary/20 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <CardContent className="p-8 text-center">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-              <Heart className="h-8 w-8 text-primary" />
+        <Card className={`mb-12 bg-primary/5 border-primary/20 transition-all duration-700 delay-200 overflow-hidden ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <div className="grid md:grid-cols-2">
+            <div className="relative h-64 md:h-auto">
+              <Image
+                src="/images/img-563.jpg"
+                alt="Students at SOAR Kenya Academy"
+                fill
+                className="object-cover"
+              />
             </div>
-            <p className="text-foreground text-lg font-medium mb-4 max-w-3xl mx-auto text-pretty">
-              {'"Every child deserves a chance to learn, grow, and dream. At SOAR Kenya Academy, we don\'t just educate — we transform lives and build futures. With your help, we can reach even more children in need."'}
-            </p>
-            <p className="text-muted-foreground italic">— Mr. James Yegon, Founder & Director</p>
-          </CardContent>
+            <CardContent className="p-8 flex flex-col justify-center">
+              <div className="w-16 h-16 mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+                <Heart className="h-8 w-8 text-primary" />
+              </div>
+              <p className="text-foreground text-lg font-medium mb-4 text-pretty">
+                {'"Every child deserves a chance to learn, grow, and dream. At SOAR Kenya Academy, we don\'t just educate — we transform lives and build futures. With your help, we can reach even more children in need."'}
+              </p>
+              <p className="text-muted-foreground italic">— Mr. James Yegon, Founder & Director</p>
+            </CardContent>
+          </div>
         </Card>
 
         {/* Needs Grid */}

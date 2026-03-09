@@ -22,7 +22,7 @@ export function HeroSection() {
       {/* ── Background photo ── */}
       <div className="absolute inset-0">
         <Image
-          src="/images/school-building.jpg"
+          src="/images/img-1017.jpg"
           alt="SOAR Kenya Academy"
           fill
           className="object-cover"
@@ -55,7 +55,7 @@ export function HeroSection() {
           <div className="flex justify-center mb-7">
             <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-400/50">
               <Image
-                src="/images/logo.jpg"
+                src="/images/img-000.jpg"
                 alt="SOAR Kenya Academy crest"
                 fill
                 className="object-cover"

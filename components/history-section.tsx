@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 
 const timelineEvents = [
@@ -9,36 +10,42 @@ const timelineEvents = [
     title: "The Beginning",
     description: "Founded on January 12th with just 1 mud classroom, 25 pupils, and 2 teachers. SOAR-Kenya Organization (USA) generously donated 2 acres of land to establish the school.",
     highlight: "Where it all started",
+    image: "/images/img-023.jpg",
   },
   {
     year: "Early Years",
     title: "Humble Beginnings",
     description: "First bush latrine constructed, first morning assembly held under a tree, and a small mud admin office built. The community rallied together to support the growing school.",
     highlight: "Building from nothing",
+    image: "/images/img-024.jpg",
   },
   {
     year: "Growth Phase",
     title: "First Permanent Structures",
     description: "First permanent classroom block with a beautiful red roof was donated by Linda Rotary Club of Waunakee & SOAR-Kenya. This marked a turning point for the school.",
     highlight: "A new chapter begins",
+    image: "/images/img-025.jpg",
   },
   {
     year: "Expansion",
     title: "Rising Higher",
     description: "Two-storey administration block (pink/purple) was generously donated by Shanna & Mick. The school now had proper administrative facilities to manage growing operations.",
     highlight: "Reaching new heights",
+    image: "/images/img-028.jpg",
   },
   {
     year: "Recent",
     title: "Junior Secondary Building",
     description: "A magnificent 3-storey Junior Secondary building is currently under construction. This will enable the school to offer CBC education to Grade 7-9 students.",
     highlight: "Building the future",
+    image: "/images/img-029.jpg",
   },
   {
     year: "Present",
     title: "Thriving Community",
     description: "Over 600 students now call SOAR Kenya Academy home. Modern multi-storey buildings, solar panels, and a borehole provide sustainable education for the community.",
     highlight: "A beacon of hope",
+    image: "/images/img-031.jpg",
   },
 ]
 
@@ -72,11 +79,17 @@ export function HistorySection() {
         <div className="mt-20 max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="bg-card border-border overflow-hidden">
-              <div className="h-48 bg-primary/10 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <p className="text-6xl mb-2">🏚️</p>
-                  <p className="font-serif font-bold text-lg text-card-foreground">2011</p>
-                  <p className="text-muted-foreground text-sm">1 Mud Classroom</p>
+              <div className="h-48 relative">
+                <Image
+                  src="/images/img-032.jpg"
+                  alt="SOAR Kenya Academy in 2011"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 text-center p-4">
+                  <p className="font-serif font-bold text-lg text-white">2011</p>
+                  <p className="text-white/80 text-sm">1 Mud Classroom</p>
                 </div>
               </div>
               <CardContent className="p-4 text-center">
@@ -85,11 +98,17 @@ export function HistorySection() {
             </Card>
 
             <Card className="bg-card border-border overflow-hidden">
-              <div className="h-48 bg-secondary/10 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <p className="text-6xl mb-2">🏫</p>
-                  <p className="font-serif font-bold text-lg text-card-foreground">Today</p>
-                  <p className="text-muted-foreground text-sm">Modern Campus</p>
+              <div className="h-48 relative">
+                <Image
+                  src="/images/img-033.jpg"
+                  alt="SOAR Kenya Academy Today"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 text-center p-4">
+                  <p className="font-serif font-bold text-lg text-white">Today</p>
+                  <p className="text-white/80 text-sm">Modern Campus</p>
                 </div>
               </div>
               <CardContent className="p-4 text-center">

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Target, Eye, Award, Quote, Building2 } from "lucide-react"
 
@@ -58,6 +59,22 @@ export function AboutSection() {
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
             SOAR Kenya Academy started on January 12, 2011, with help from the SOAR-Kenya Organization (USA) who generously donated 2 acres of land. We began with just 1 mud classroom, 25 pupils, and 2 teachers. Today, we are a thriving community of over 600 students.
           </p>
+        </div>
+
+        {/* Image Gallery */}
+        <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <div className="relative aspect-square rounded-lg overflow-hidden">
+            <Image src="/images/img-036.jpg" alt="Students at SOAR Kenya Academy" fill className="object-cover hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div className="relative aspect-square rounded-lg overflow-hidden">
+            <Image src="/images/img-039.jpg" alt="School activities" fill className="object-cover hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div className="relative aspect-square rounded-lg overflow-hidden">
+            <Image src="/images/img-040.jpg" alt="Learning environment" fill className="object-cover hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div className="relative aspect-square rounded-lg overflow-hidden">
+            <Image src="/images/img-041.jpg" alt="School community" fill className="object-cover hover:scale-105 transition-transform duration-300" />
+          </div>
         </div>
 
         {/* Mission, Vision, Motto Cards */}

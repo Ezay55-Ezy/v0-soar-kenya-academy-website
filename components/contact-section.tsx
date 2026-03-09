@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -45,7 +46,15 @@ export function ContactSection() {
           {/* Contact Cards Grid */}
           <div className={`grid md:grid-cols-2 gap-6 mb-12 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             {/* Director Card */}
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border overflow-hidden">
+              <div className="relative h-40">
+                <Image
+                  src="/images/img-564.jpg"
+                  alt="SOAR Kenya Academy"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
@@ -80,7 +89,15 @@ export function ContactSection() {
             </Card>
 
             {/* Location Card */}
-            <Card className="bg-card border-border">
+            <Card className="bg-card border-border overflow-hidden">
+              <div className="relative h-40">
+                <Image
+                  src="/images/img-565.jpg"
+                  alt="SOAR Kenya Academy Location"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <CardContent className="p-6">
                 <h3 className="font-serif font-bold text-lg text-card-foreground mb-6 flex items-center gap-2">
                   <MapPin className="h-5 w-5 text-secondary" />
@@ -102,11 +119,10 @@ export function ContactSection() {
                       Southern side of Nakuru town, 12km from town center, bordering the beautiful Lake Nakuru National Park
                     </p>
                   </div>
-                  <div className="pt-2 border-t border-border">
-                    <p className="text-xs text-muted-foreground">
-                      <span className="font-medium">Registration:</span> PE/9720/13
-                    </p>
-                  </div>
+                <div className="pt-2 border-t border-border">
+                  <p className="text-xs text-muted-foreground">
+                    <span className="font-medium">Registration:</span> PE/9720/13
+                  </p>
                 </div>
               </CardContent>
             </Card>

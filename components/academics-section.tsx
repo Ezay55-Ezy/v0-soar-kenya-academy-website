@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { GraduationCap, Users, BookOpen, School } from "lucide-react"
@@ -15,6 +16,7 @@ const programs = [
     description: "Foundation years focusing on early childhood development, play-based learning, and preparation for primary education.",
     subjects: ["Numeracy", "Literacy", "Environmental Activities", "Creative Arts", "Music & Movement"],
     color: "primary",
+    image: "/images/img-042.jpg",
   },
   {
     id: "lower-primary",
@@ -25,6 +27,7 @@ const programs = [
     description: "Introduction to Competency-Based Curriculum (CBC) with focus on foundational literacy and numeracy skills.",
     subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Creative Arts", "Music"],
     color: "secondary",
+    image: "/images/img-043.jpg",
   },
   {
     id: "upper-primary",
@@ -35,6 +38,7 @@ const programs = [
     description: "Advanced primary education covering both CBC curriculum with KEPSEA examination and traditional 8-4-4 system with KCPE.",
     subjects: ["Mathematics", "English", "Kiswahili", "Science", "Social Studies", "Religious Education", "Agriculture"],
     color: "primary",
+    image: "/images/img-044.jpg",
   },
   {
     id: "junior-secondary",
@@ -45,6 +49,7 @@ const programs = [
     description: "The new 2-6-3-3-3 education system with 12 compulsory subjects preparing students for Senior Secondary education.",
     subjects: ["Mathematics", "English", "Kiswahili", "Integrated Science", "Health Education", "Social Studies", "Agriculture", "Business Studies", "Life Skills", "Religious Education", "Computer Science", "Creative Arts"],
     color: "secondary",
+    image: "/images/img-473.jpg",
   },
 ]
 
@@ -100,40 +105,52 @@ export function AcademicsSection() {
 
             {programs.map((program) => (
               <TabsContent key={program.id} value={program.id} className="mt-8">
-                <Card className="bg-card border-border">
-                  <CardHeader>
-                    <div className="flex items-center gap-4">
-                      <div className={`w-14 h-14 rounded-full flex items-center justify-center ${program.color === "primary" ? "bg-primary/10" : "bg-secondary/10"}`}>
-                        <program.icon className={`h-7 w-7 ${program.color === "primary" ? "text-primary" : "text-secondary"}`} />
-                      </div>
-                      <div>
-                        <CardTitle className="font-serif text-card-foreground">{program.title}</CardTitle>
-                        <p className="text-muted-foreground text-sm">
-                          {program.grades} • {program.ages}
-                        </p>
-                      </div>
+                <Card className="bg-card border-border overflow-hidden">
+                  <div className="grid md:grid-cols-2">
+                    <div className="relative h-48 md:h-auto">
+                      <Image
+                        src={program.image}
+                        alt={program.title}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground mb-6">{program.description}</p>
                     <div>
-                      <h4 className="font-semibold text-sm text-card-foreground mb-3">Key Subjects:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {program.subjects.map((subject) => (
-                          <span
-                            key={subject}
-                            className={`px-3 py-1 rounded-full text-xs ${
-                              program.color === "primary"
-                                ? "bg-primary/10 text-primary"
-                                : "bg-secondary/10 text-secondary"
-                            }`}
-                          >
-                            {subject}
-                          </span>
-                        ))}
-                      </div>
+                      <CardHeader>
+                        <div className="flex items-center gap-4">
+                          <div className={`w-14 h-14 rounded-full flex items-center justify-center ${program.color === "primary" ? "bg-primary/10" : "bg-secondary/10"}`}>
+                            <program.icon className={`h-7 w-7 ${program.color === "primary" ? "text-primary" : "text-secondary"}`} />
+                          </div>
+                          <div>
+                            <CardTitle className="font-serif text-card-foreground">{program.title}</CardTitle>
+                            <p className="text-muted-foreground text-sm">
+                              {program.grades} • {program.ages}
+                            </p>
+                          </div>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-muted-foreground mb-6">{program.description}</p>
+                        <div>
+                          <h4 className="font-semibold text-sm text-card-foreground mb-3">Key Subjects:</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {program.subjects.map((subject) => (
+                              <span
+                                key={subject}
+                                className={`px-3 py-1 rounded-full text-xs ${
+                                  program.color === "primary"
+                                    ? "bg-primary/10 text-primary"
+                                    : "bg-secondary/10 text-secondary"
+                                }`}
+                              >
+                                {subject}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </CardContent>
                     </div>
-                  </CardContent>
+                  </div>
                 </Card>
               </TabsContent>
             ))}
