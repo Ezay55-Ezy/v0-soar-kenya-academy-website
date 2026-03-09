@@ -101,17 +101,22 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Stats bar with RGB glow effect around edges */}
-          <div className="relative inline-block">
-            {/* Animated RGB glow border */}
+          {/* Stats bar with RGB glow effect on border edges only */}
+          <div className="relative inline-block p-[3px] rounded-2xl animate-rgb-glow"
+            style={{
+              background: "linear-gradient(90deg, #4285f4, #ea4335, #fbbc04, #34a853, #4285f4)",
+              backgroundSize: "300% 100%",
+            }}
+          >
+            {/* Soft outer glow on edges */}
             <div 
-              className="absolute -inset-1 rounded-2xl opacity-75 blur-md animate-rgb-glow"
+              className="absolute inset-0 rounded-2xl blur-sm opacity-60 animate-rgb-glow -z-10"
               style={{
                 background: "linear-gradient(90deg, #4285f4, #ea4335, #fbbc04, #34a853, #4285f4)",
                 backgroundSize: "300% 100%",
               }}
             />
-            <div className="relative inline-flex flex-wrap justify-center items-center gap-6 md:gap-10 bg-white/10 backdrop-blur-sm rounded-2xl px-6 md:px-12 py-5 border border-white/20">
+            <div className="relative inline-flex flex-wrap justify-center items-center gap-6 md:gap-10 bg-purple-950/95 backdrop-blur-sm rounded-2xl px-6 md:px-12 py-5">
               <StatItem value="2011" label="Founded" />
               <div className="w-px bg-white/30 hidden md:block self-stretch" />
               <StatItem value="600+" label="Students" animate />
