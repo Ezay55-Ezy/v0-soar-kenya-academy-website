@@ -99,7 +99,7 @@ export function HistorySection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 text-center p-4">
                   <p className="font-serif font-bold text-lg text-white">Today</p>
-                  <p className="text-white/80 text-sm">Modern Campus</p>
+                  <p className="text-white/80 text-sm">Modern School</p>
                 </div>
               </div>
               <CardContent className="p-4 text-center">
