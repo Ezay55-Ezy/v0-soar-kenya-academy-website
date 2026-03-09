@@ -10,99 +10,114 @@ export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    setIsVisible(true)
+    const timer = setTimeout(() => setIsVisible(true), 100)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full">
-          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <defs>
-              <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                <circle cx="1" cy="1" r="0.5" fill="white" />
-              </pattern>
-            </defs>
-            <rect width="100" height="100" fill="url(#grid)" />
-          </svg>
-        </div>
+      {/* ── Background photo ── */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/school-building.jpg"
+          alt="SOAR Kenya Academy"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark purple gradient overlay so text is always readable */}
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-950/90 via-purple-900/85 to-purple-800/80" />
+        {/* Subtle dot-grid texture */}
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+            backgroundSize: "28px 28px",
+          }}
+        />
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute top-20 right-10 w-64 h-64 bg-secondary/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+      {/* Ambient glow blobs */}
+      <div className="absolute top-24 right-16 w-80 h-80 bg-yellow-400/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-32 left-10 w-96 h-96 bg-green-500/8 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="container mx-auto px-4 text-center relative z-10">
+      {/* ── Hero content ── */}
+      <div className="container mx-auto px-4 text-center relative z-10 pt-16">
         <div
           className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Logo */}
-          <div className="flex justify-center mb-6">
-            <Image
-              src="/images/logo.jpg"
-              alt="SOAR Kenya Academy Logo"
-              width={180}
-              height={180}
-              className="rounded-full shadow-2xl border-4 border-primary-foreground/20"
-              priority
-            />
+          {/* Logo — hero size (120px), not full-width */}
+          <div className="flex justify-center mb-7">
+            <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-400/50">
+              <Image
+                src="/images/logo.jpg"
+                alt="SOAR Kenya Academy crest"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 112px, 128px"
+              />
+            </div>
           </div>
-          
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground mb-4 tracking-wide">
+
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-3 tracking-wide drop-shadow-lg">
             SOAR KENYA ACADEMY
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-2">
-            Service Above Self
+
+          <p className="text-yellow-300 text-base md:text-lg font-bold mb-2 tracking-widest uppercase">
+            ✦ Service Above Self ✦
           </p>
-          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-8 text-pretty">
-            {"Today's preparation determines tomorrow's achievements"}
+
+          <p className="text-white/70 text-sm md:text-base max-w-xl mx-auto mb-8 italic">
+            "Today's preparation determines tomorrow's achievements"
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
               asChild
               size="lg"
-              className="bg-card text-primary hover:bg-card/90 font-semibold px-8"
+              className="bg-white text-purple-900 hover:bg-yellow-50 font-bold px-8 shadow-lg"
             >
               <Link href="#about">Our Story</Link>
             </Button>
             <Button
               asChild
               size="lg"
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8"
+              className="bg-yellow-500 hover:bg-yellow-400 text-purple-900 font-bold px-8 shadow-lg"
             >
               <Link href="#support">Support Us</Link>
             </Button>
           </div>
         </div>
 
-        {/* Stats Bar */}
+        {/* Stats bar */}
         <div
           className={`transition-all duration-1000 delay-300 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="inline-flex flex-wrap justify-center gap-4 md:gap-8 bg-card/10 backdrop-blur-sm rounded-full px-6 md:px-10 py-4 border border-primary-foreground/20">
+          <div className="inline-flex flex-wrap justify-center gap-6 md:gap-10 bg-white/10 backdrop-blur-sm rounded-2xl px-6 md:px-12 py-5 border border-white/20">
             <StatItem value="2011" label="Founded" />
-            <div className="w-px bg-primary-foreground/30 hidden md:block" />
+            <div className="w-px bg-white/30 hidden md:block self-stretch" />
             <StatItem value="600+" label="Students" animate />
-            <div className="w-px bg-primary-foreground/30 hidden md:block" />
-            <StatItem value="7+" label="Projects" animate />
+            <div className="w-px bg-white/30 hidden md:block self-stretch" />
+            <StatItem value="15" label="Teachers" animate />
+            <div className="w-px bg-white/30 hidden md:block self-stretch" />
+            <StatItem value="10+" label="Projects" animate />
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll indicator */}
       <Link
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-primary-foreground/60 hover:text-primary-foreground transition-colors animate-bounce"
-        aria-label="Scroll to About section"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 hover:text-yellow-400 transition-colors animate-bounce"
+        aria-label="Scroll down"
       >
         <ChevronDown className="h-8 w-8" />
       </Link>
@@ -110,36 +125,40 @@ export function HeroSection() {
   )
 }
 
-function StatItem({ value, label, animate = false }: { value: string; label: string; animate?: boolean }) {
-  const [displayValue, setDisplayValue] = useState(animate ? "0" : value)
+function StatItem({
+  value,
+  label,
+  animate = false,
+}: {
+  value: string
+  label: string
+  animate?: boolean
+}) {
+  const [display, setDisplay] = useState(animate ? "0" : value)
 
   useEffect(() => {
     if (!animate) return
-
-    const numericValue = parseInt(value.replace(/\D/g, ""))
+    const num = parseInt(value.replace(/\D/g, ""))
     const suffix = value.replace(/\d/g, "")
-    const duration = 2000
     const steps = 50
-    const increment = numericValue / steps
-    let current = 0
-
+    const inc = num / steps
+    let cur = 0
     const timer = setInterval(() => {
-      current += increment
-      if (current >= numericValue) {
-        setDisplayValue(value)
+      cur += inc
+      if (cur >= num) {
+        setDisplay(value)
         clearInterval(timer)
       } else {
-        setDisplayValue(Math.floor(current) + suffix)
+        setDisplay(Math.floor(cur) + suffix)
       }
-    }, duration / steps)
-
+    }, 2000 / steps)
     return () => clearInterval(timer)
   }, [animate, value])
 
   return (
     <div className="text-center px-2">
-      <p className="text-xl md:text-2xl font-bold text-primary-foreground">{displayValue}</p>
-      <p className="text-xs md:text-sm text-primary-foreground/70">{label}</p>
+      <p className="text-2xl md:text-3xl font-extrabold text-white">{display}</p>
+      <p className="text-xs md:text-sm text-white/65 mt-0.5">{label}</p>
     </div>
   )
 }
