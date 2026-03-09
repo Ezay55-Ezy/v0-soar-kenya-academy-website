@@ -12,6 +12,7 @@ const navLinks = [
   { href: "#history", label: "Our History" },
   { href: "#academics", label: "Academics" },
   { href: "#projects", label: "Community Projects" },
+  { href: "#gallery", label: "Gallery" },
   { href: "#support", label: "Support Us" },
   { href: "#contact", label: "Contact" },
 ]
@@ -75,6 +76,13 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={() => {
+                  if (link.href === "#gallery") {
+                    setTimeout(() => {
+                      window.dispatchEvent(new CustomEvent("expandGallery"))
+                    }, 100)
+                  }
+                }}
                 className={`text-sm font-medium transition-colors ${
                   isScrolled
                     ? "text-gray-700 hover:text-purple-700"
@@ -115,7 +123,14 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false)
+                    if (link.href === "#gallery") {
+                      setTimeout(() => {
+                        window.dispatchEvent(new CustomEvent("expandGallery"))
+                      }, 100)
+                    }
+                  }}
                   className="text-gray-700 hover:text-purple-700 hover:bg-purple-50 transition-colors py-2.5 px-3 rounded-md font-medium text-sm"
                 >
                   {link.label}
