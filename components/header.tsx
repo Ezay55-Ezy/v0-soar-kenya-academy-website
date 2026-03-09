@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -38,11 +39,15 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="#home" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-serif font-bold text-lg">
-              S
-            </div>
+            <Image
+              src="/images/logo.jpg"
+              alt="SOAR Kenya Academy"
+              width={44}
+              height={44}
+              className="rounded-full"
+            />
             <span className={`font-serif font-bold text-lg ${isScrolled ? "text-foreground" : "text-card"}`}>
-              SOAR Kenya
+              SOAR KENYA
             </span>
           </Link>
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
 
@@ -41,11 +42,20 @@ export function HeroSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-primary-foreground/80 text-sm md:text-base uppercase tracking-widest mb-4">
-            School, Orphans and Relief
-          </p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-primary-foreground mb-6 text-balance">
-            SOAR Kenya Academy
+          {/* Logo */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/logo.jpg"
+              alt="SOAR Kenya Academy Logo"
+              width={180}
+              height={180}
+              className="rounded-full shadow-2xl border-4 border-primary-foreground/20"
+              priority
+            />
+          </div>
+          
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground mb-4 tracking-wide">
+            SOAR KENYA ACADEMY
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-2">
             Service Above Self
@@ -82,8 +92,6 @@ export function HeroSection() {
             <StatItem value="2011" label="Founded" />
             <div className="w-px bg-primary-foreground/30 hidden md:block" />
             <StatItem value="600+" label="Students" animate />
-            <div className="w-px bg-primary-foreground/30 hidden md:block" />
-            <StatItem value="15" label="Teachers" animate />
             <div className="w-px bg-primary-foreground/30 hidden md:block" />
             <StatItem value="7+" label="Projects" animate />
           </div>
