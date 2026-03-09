@@ -22,7 +22,7 @@ export function HeroSection() {
       {/* ── Background photo ── */}
       <div className="absolute inset-0">
         <Image
-          src="/images/school-building.jpg"
+          src="/images/img-042.jpg"
           alt="SOAR Kenya Academy"
           fill
           className="object-cover"
