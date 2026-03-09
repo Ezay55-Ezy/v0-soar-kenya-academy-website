@@ -119,10 +119,11 @@ export function ContactSection() {
                       Southern side of Nakuru town, 12km from town center, bordering the beautiful Lake Nakuru National Park
                     </p>
                   </div>
-                <div className="pt-2 border-t border-border">
-                  <p className="text-xs text-muted-foreground">
-                    <span className="font-medium">Registration:</span> PE/9720/13
-                  </p>
+                  <div className="pt-2 border-t border-border">
+                    <p className="text-xs text-muted-foreground">
+                      <span className="font-medium">Registration:</span> PE/9720/13
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
