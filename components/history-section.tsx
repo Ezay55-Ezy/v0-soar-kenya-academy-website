@@ -72,11 +72,16 @@ export function HistorySection() {
         <div className="mt-20 max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="bg-card border-border overflow-hidden">
-              <div className="h-48 bg-primary/10 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <p className="text-6xl mb-2">🏚️</p>
-                  <p className="font-serif font-bold text-lg text-card-foreground">2011</p>
-                  <p className="text-muted-foreground text-sm">1 Mud Classroom</p>
+              <div className="h-48 relative">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mud%20classroom-9wHI3BP5gjxHDJUkwra8GSc7bnaZMc.jpg"
+                  alt="Children at SOAR Kenya Academy's humble beginnings in 2011 with mud classroom buildings in the background"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 text-center p-4">
+                  <p className="font-serif font-bold text-lg text-white">2011</p>
+                  <p className="text-white/80 text-sm">1 Mud Classroom</p>
                 </div>
               </div>
               <CardContent className="p-4 text-center">
@@ -85,11 +90,16 @@ export function HistorySection() {
             </Card>
 
             <Card className="bg-card border-border overflow-hidden">
-              <div className="h-48 bg-secondary/10 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <p className="text-6xl mb-2">🏫</p>
-                  <p className="font-serif font-bold text-lg text-card-foreground">Today</p>
-                  <p className="text-muted-foreground text-sm">Modern Campus</p>
+              <div className="h-48 relative">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/multi%20storey%20building-bSv3PQvrPba4QvY7Fly4V3ovy8j26p.jpg"
+                  alt="SOAR Kenya Academy's modern multi-storey school building"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 text-center p-4">
+                  <p className="font-serif font-bold text-lg text-white">Today</p>
+                  <p className="text-white/80 text-sm">Modern Campus</p>
                 </div>
               </div>
               <CardContent className="p-4 text-center">
