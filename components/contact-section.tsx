@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Globe, Building } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook, Building } from "lucide-react"
 import Image from "next/image"
 
 export function ContactSection() {
@@ -125,12 +125,6 @@ export function ContactSection() {
               <Link href="https://www.facebook.com/soarkenyaacademy" target="_blank" rel="noopener noreferrer">
                 <Facebook className="h-4 w-4 mr-2" />
                 Facebook
-              </Link>
-            </Button>
-            <Button asChild variant="outline" className="border-secondary/30 hover:border-secondary hover:bg-secondary/5">
-              <Link href="https://soarkenyaacademy.wixsite.com/soarkenyaacademy" target="_blank" rel="noopener noreferrer">
-                <Globe className="h-4 w-4 mr-2" />
-                Website
               </Link>
             </Button>
             <Button asChild variant="outline" className="border-primary/30 hover:border-primary hover:bg-primary/5">
