@@ -23,7 +23,7 @@ const programs = [
     grades: "PP1 & PP2",
     ages: "Ages 4-5",
     description: "Foundation years focusing on early childhood development, play-based learning, and preparation for primary education.",
-    subjects: ["Numeracy", "Literacy", "Environmental Activities", "Creative Arts", "Music & Movement"],
+    subjects: ["Numeracy", "Literacy", "Environmental Activities", "Creative Arts"],
     color: "primary",
   },
   {
@@ -33,7 +33,7 @@ const programs = [
     grades: "Grade 1-2",
     ages: "Ages 6-8",
     description: "Introduction to Competency-Based Curriculum (CBC) with focus on foundational literacy and numeracy skills.",
-    subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Creative Arts", "Music"],
+    subjects: ["Mathematics", "English", "Kiswahili", "Environmental Activities", "Creative Arts"],
     color: "secondary",
   },
   {
@@ -227,7 +227,7 @@ export function AcademicsSection() {
                       { subject: "Agriculture", ee: 4, me: 20, ae: 20, be: 2 },
                       { subject: "Home Science", ee: 8, me: 18, ae: 22, be: 0 },
                       { subject: "Art & Craft", ee: 12, me: 16, ae: 18, be: 0 },
-                      { subject: "Music", ee: 4, me: 24, ae: 18, be: 0 },
+                      
                       { subject: "Physical Education", ee: 9, me: 20, ae: 16, be: 1 },
                       { subject: "Social Studies", ee: 0, me: 15, ae: 27, be: 4 },
                       { subject: "CRE", ee: 19, me: 15, ae: 12, be: 0 },
