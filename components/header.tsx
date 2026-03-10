@@ -44,7 +44,7 @@ export function Header() {
           <Link href="#home" className="flex items-center gap-3 shrink-0">
             <div className="relative w-10 h-10 shrink-0 rounded-full overflow-hidden border-2 border-yellow-400/60 shadow-sm">
               <Image
-                src="/images/logo.jpg"
+                src="/SOAR KENYA COMMUNITY/School Logo/IMG-20260309-WA0004.jpg"
                 alt="SOAR Kenya Academy Logo"
                 fill
                 className="object-cover"
