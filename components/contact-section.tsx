@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Mail, Phone, MapPin, Facebook, Globe, Building } from "lucide-react"
+import Image from "next/image"
 
 export function ContactSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -48,8 +49,14 @@ export function ContactSection() {
             <Card className="bg-card border-border">
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-2xl font-serif font-bold text-primary">JY</span>
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/30 shadow-md shrink-0">
+                    <Image
+                      src="/SOAR KENYA COMMUNITY/The Director/IMG-20260309-WA0074.jpg"
+                      alt="Mr. James Kiprop Yegon"
+                      fill
+                      className="object-cover"
+                      sizes="64px"
+                    />
                   </div>
                   <div>
                     <h3 className="font-serif font-bold text-lg text-card-foreground">James Kiprop Yegon</h3>

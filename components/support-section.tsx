@@ -15,6 +15,7 @@ import {
   Calendar,
   Infinity,
 } from "lucide-react"
+import Image from "next/image"
 
 const currentNeeds = [
   { icon: DollarSign, text: "Operational funds shortage" },
@@ -92,14 +93,26 @@ export function SupportSection() {
 
         {/* Emotional Appeal Card */}
         <Card className={`mb-12 bg-primary/5 border-primary/20 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <CardContent className="p-8 text-center">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-              <Heart className="h-8 w-8 text-primary" />
+          <CardContent className="p-8">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+              {/* Director Photo */}
+              <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shrink-0">
+                <Image
+                  src="/SOAR KENYA COMMUNITY/The Director/IMG-20260309-WA0074.jpg"
+                  alt="Mr. James Kiprop Yegon - Founder & Director"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 96px, 128px"
+                />
+              </div>
+              {/* Quote */}
+              <div className="text-center md:text-left">
+                <p className="text-foreground text-lg font-medium mb-4 max-w-3xl text-pretty">
+                  {'"Every child deserves a chance to learn, grow, and dream. At SOAR Kenya Academy, we don\'t just educate — we transform lives and build futures. With your help, we can reach even more children in need."'}
+                </p>
+                <p className="text-muted-foreground italic">— Mr. James Kiprop Yegon, Founder & Director</p>
+              </div>
             </div>
-            <p className="text-foreground text-lg font-medium mb-4 max-w-3xl mx-auto text-pretty">
-              {'"Every child deserves a chance to learn, grow, and dream. At SOAR Kenya Academy, we don\'t just educate — we transform lives and build futures. With your help, we can reach even more children in need."'}
-            </p>
-            <p className="text-muted-foreground italic">— Mr. James Yegon, Founder & Director</p>
           </CardContent>
         </Card>
 
