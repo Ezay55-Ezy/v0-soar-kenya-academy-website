@@ -10,60 +10,59 @@ const galleryCategories = [
   {
     name: "Academics",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/Academics/IMG-20260309-WA0022.jpg", alt: "Academic activities at SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/Academics/IMG-20260309-WA0081.jpg", alt: "Academic activities at SOAR Kenya" },
     ],
   },
   {
     name: "Co-Curricular activities",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0028.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0029.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0030.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0031.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0032.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0033.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0034.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0035.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0036.jpg", alt: "Co-curricular activities" },
-      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0037.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0026.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0053.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0054.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0055.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0056.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0057.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0058.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0060.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0061.jpg", alt: "Co-curricular activities" },
+      { src: "/SOAR KENYA COMMUNITY/Co-Curricular activities/IMG-20260309-WA0080.jpg", alt: "Co-curricular activities" },
     ],
   },
   {
     name: "Construction projects",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0055.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0056.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0057.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0058.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0059.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0060.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0061.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0062.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0063.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0064.jpg", alt: "Construction project" },
-      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0065.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0046.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0047.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/IMG-20260309-WA0049.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/img-025.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/img-029.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/img-033.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/img-036.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/img-039.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/img-041.jpg", alt: "Construction project" },
+      { src: "/SOAR KENYA COMMUNITY/Construction projects/multi storey building.jpg", alt: "Multi storey building" },
     ],
   },
   {
     name: "Freedom for Girls",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/Freedom for Girls/IMG-20260309-WA0066.jpg", alt: "Freedom for Girls program" },
+      { src: "/SOAR KENYA COMMUNITY/Freedom for Girls/img-475.jpg", alt: "Freedom for Girls program" },
     ],
   },
   {
     name: "Greenhouse and irrigation project",
     images: [
+      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0041.jpg", alt: "Greenhouse project" },
+      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0042.jpg", alt: "Greenhouse project" },
       { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0067.jpg", alt: "Greenhouse project" },
       { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0068.jpg", alt: "Greenhouse project" },
-      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0069.jpg", alt: "Irrigation project" },
       { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0070.jpg", alt: "Irrigation project" },
-      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0071.jpg", alt: "Greenhouse project" },
+      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0071.jpg", alt: "Irrigation project" },
       { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0072.jpg", alt: "Greenhouse project" },
-      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0073.jpg", alt: "Irrigation project" },
-      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0074.jpg", alt: "Irrigation project" },
-      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0075.jpg", alt: "Greenhouse project" },
-      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0076.jpg", alt: "Greenhouse project" },
-      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0077.jpg", alt: "Irrigation project" },
+      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/IMG-20260309-WA0073.jpg", alt: "Greenhouse project" },
+      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/img-558.jpg", alt: "Irrigation project" },
+      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/img-559.jpg", alt: "Irrigation project" },
+      { src: "/SOAR KENYA COMMUNITY/Greenhouse and irrigation project/img-560.jpg", alt: "Greenhouse project" },
     ],
   },
   {
@@ -76,25 +75,46 @@ const galleryCategories = [
   {
     name: "OLD SOAR",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0038.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0039.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0040.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0041.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0042.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0043.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0044.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0045.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0046.jpg", alt: "Old SOAR Kenya" },
-      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0047.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/IMG-20260309-WA0079.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-023.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-024.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-028.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-031.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-1069.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-476.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-477.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/img-563.jpg", alt: "Old SOAR Kenya" },
+      { src: "/SOAR KENYA COMMUNITY/OLD SOAR/mud classroom.jpg", alt: "Mud classroom" },
     ],
   },
   {
     name: "SOAR Community",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0078.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0079.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0080.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0081.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0027.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0028.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0029.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0030.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0031.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0032.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0033.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0034.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0035.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0036.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0037.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0038.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0039.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0040.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0043.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0045.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0048.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0050.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0059.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0062.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0063.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0064.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0065.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0066.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0069.jpg", alt: "SOAR Community" },
       { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0082.jpg", alt: "SOAR Community" },
       { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0083.jpg", alt: "SOAR Community" },
       { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0084.jpg", alt: "SOAR Community" },
@@ -104,67 +124,46 @@ const galleryCategories = [
       { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0088.jpg", alt: "SOAR Community" },
       { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0089.jpg", alt: "SOAR Community" },
       { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0090.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0091.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0092.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0093.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0094.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0095.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0096.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0097.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0098.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0099.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0100.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0101.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0102.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0103.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0104.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0105.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0106.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0107.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0108.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0109.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0110.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0111.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0112.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0113.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0114.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0115.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0116.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0117.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0118.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0119.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0120.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0121.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0122.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0123.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0124.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0125.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0126.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0127.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0128.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0129.jpg", alt: "SOAR Community" },
-      { src: "/SOAR KENYA COMMUNITY/SOAR Community/IMG-20260309-WA0130.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-000.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-032.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-040.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-042.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-043.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-044.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-1017.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-1063.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-1066.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-1067.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-1068.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-1079.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-473.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-474.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-561.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-562.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-564.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-565.jpg", alt: "SOAR Community" },
+      { src: "/SOAR KENYA COMMUNITY/SOAR Community/img-566.jpg", alt: "SOAR Community" },
     ],
   },
   {
     name: "Solarization project",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/Solarization project/IMG-20260309-WA0053.jpg", alt: "Solarization project" },
-      { src: "/SOAR KENYA COMMUNITY/Solarization project/IMG-20260309-WA0054.jpg", alt: "Solarization project" },
+      { src: "/SOAR KENYA COMMUNITY/Solarization project/img-1064.jpg", alt: "Solarization project" },
+      { src: "/SOAR KENYA COMMUNITY/Solarization project/img-1065.jpg", alt: "Solarization project" },
     ],
   },
   {
     name: "Sponsership Program",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/Sponsership Program/IMG-20260309-WA0049.jpg", alt: "Sponsorship program" },
-      { src: "/SOAR KENYA COMMUNITY/Sponsership Program/IMG-20260309-WA0050.jpg", alt: "Sponsorship program" },
+      { src: "/SOAR KENYA COMMUNITY/Sponsership Program/img-1033.jpg", alt: "Sponsorship program" },
+      { src: "/SOAR KENYA COMMUNITY/Sponsership Program/img-1062.jpg", alt: "Sponsorship program" },
     ],
   },
   {
     name: "Water projects",
     images: [
-      { src: "/SOAR KENYA COMMUNITY/Water projects/IMG-20260309-WA0023.jpg", alt: "Water project" },
-      { src: "/SOAR KENYA COMMUNITY/Water projects/IMG-20260309-WA0024.jpg", alt: "Water project" },
+      { src: "/SOAR KENYA COMMUNITY/Water projects/IMG-20260309-WA0040.jpg", alt: "Water project" },
+      { src: "/SOAR KENYA COMMUNITY/Water projects/img-479.jpg", alt: "Water project" },
     ],
   },
 ]
@@ -372,22 +371,22 @@ export function GallerySection() {
             </div>
           )}
 
-          {/* Regular Gallery Categories */}
+          {/* Category Sections */}
           {galleryCategories
             .filter((cat) => activeCategory === "all" || activeCategory === cat.name)
             .map((category, catIndex) => (
-              <div key={catIndex} className="mb-10">
-                <h3 className="text-xl font-bold text-purple-800 mb-4 border-b border-purple-200 pb-2">
+              <div key={catIndex} className="mb-12">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">
                   {category.name}
                   <span className="text-sm font-normal text-gray-500 ml-2">
                     ({category.images.length} photos)
                   </span>
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4">
-                  {category.images.map((image, index) => (
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                  {category.images.map((image, imgIndex) => (
                     <div
-                      key={index}
-                      className="relative aspect-square rounded-lg overflow-hidden cursor-pointer group bg-muted"
+                      key={imgIndex}
+                      className="relative aspect-square rounded-lg overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-shadow"
                       onClick={() => setSelectedImage(image.src)}
                     >
                       <Image
@@ -395,47 +394,43 @@ export function GallerySection() {
                         alt={image.alt}
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-110"
-                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                     </div>
                   ))}
                 </div>
               </div>
             ))}
         </div>
-
-        {/* Lightbox Modal */}
-        {selectedImage && (
-          <div
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-pointer"
-            onClick={() => setSelectedImage(null)}
-          >
-            <button
-              className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors p-2"
-              onClick={(e) => {
-                e.stopPropagation()
-                setSelectedImage(null)
-              }}
-              aria-label="Close lightbox"
-            >
-              <X className="h-8 w-8" />
-            </button>
-            <div
-              className="relative max-w-[90vw] max-h-[90vh]"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={selectedImage}
-                alt="Gallery image enlarged"
-                className="max-w-full max-h-[90vh] object-contain rounded-lg"
-              />
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            onClick={() => setSelectedImage(null)}
+            aria-label="Close lightbox"
+          >
+            <X className="h-8 w-8" />
+          </button>
+          <div className="relative max-w-5xl max-h-[90vh] w-full h-full">
+            <Image
+              src={selectedImage}
+              alt="Gallery image"
+              fill
+              className="object-contain"
+              sizes="90vw"
+              priority
+            />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
