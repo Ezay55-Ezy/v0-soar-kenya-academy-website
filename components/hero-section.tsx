@@ -66,7 +66,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-3 tracking-wide drop-shadow-lg">
-            SOAR KENYA ACADEMY
+            SOAR KENYA COMMUNITY
           </h1>
 
           <p className="text-yellow-300 text-base md:text-lg font-bold mb-2 tracking-widest uppercase">
